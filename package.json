@@ -1,0 +1,14 @@
+{
+  "name": "gd40",
+  "version": "1.0.0",
+  "description": "Greetings Designator Mark 40 v3",
+  "main": "gd40.js",
+  "scripts": {
+    "test": "test40"
+  },
+  "author": "FallenLogic",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "discord.js": "^13.8.1"
+  }
+}
