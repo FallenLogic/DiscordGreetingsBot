@@ -1,6 +1,6 @@
 // Require the necessary discord.js classes
 const { Client, Intents } = require('discord.js');
-token = 'OTkxNzc5OTEwNTU1MjgzNDg2.GCc7Ui.tAPXRCIJ-bAYUToBFvOWOk5FiN_ft4pjOWoK3I'
+token = '[your_token]'
 
 const myIntents = new Intents();
 myIntents.add(Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_PRESENCES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_MESSAGES);
