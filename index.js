@@ -18,12 +18,15 @@ client.once('ready', () => {
 client.login(token);
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.cache.get('991788730933325824').send('Good hello to ' + member.user.username + '!'); 
+    member.guild.channels.cache.get('[join_channel]').send('Welcome, Imperial citizen. Identification: ' + member.user.username + '!'); 
 });
 
 client.on('messageCreate', message => {
 	let tag = client.users.cache.get(message.author);
-	if (message.mentions.has(client.user)) {
-        message.channel.send('Good hello to ' + message.author.username + '!'); 
+	if (message.mentions.has(client.user) && message.content.includes("birthday")) {
+        message.channel.send('Enjoy your birthday, Imperial citizen. Identification: ' + message.author.username + '.'); 
     }
+	if (message.mentions.has(client.user) && !message.content.includes("birthday")) {
+		message.channel.send('Good hello to ' + message.author.username + '!');
+	}
 });
